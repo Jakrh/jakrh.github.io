@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on Jakr Hung&#39;s Learning Notes</title>
-    <link>https://jakrh.github.io/categories/</link>
-    <description>Recent content in Categories on Jakr Hung&#39;s Learning Notes</description>
-    <generator>Hugo</generator>
-    <language>zh-tw</language>
-    <copyright>Verbatim copying and distribution of this entire article are permitted worldwide, without royalty, in any medium, provided this notice is preserved.</copyright>
-    <atom:link href="https://jakrh.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Jakr Hung's Learning Notes</title><link>https://jakrh.github.io/categories/</link><description>Recent content in Categories on Jakr Hung's Learning Notes</description><generator>Hugo</generator><language>zh-tw</language><atom:link href="https://jakrh.github.io/categories/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
