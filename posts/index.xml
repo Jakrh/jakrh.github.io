@@ -10,7 +10,12 @@
 &lt;p>剩下的都其次。&lt;/p>
 &lt;h2 id="指標變數">指標變數&lt;/h2>
 &lt;h3 id="引用-reference">引用 (reference)&lt;/h3>
-&lt;p>在一般變數面前加一個 &lt;code>&amp;amp;&lt;/code> 符號 (address-of operator)，這時取出的不是值 (value)，而是該值存放在記憶體中的位址 (address)。&lt;/p></description></item><item><title>在 Mac/Linux/WSL 安裝多版本 Go</title><link>https://jakrh.github.io/posts/20250328-multi-version-go/</link><pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate><guid>https://jakrh.github.io/posts/20250328-multi-version-go/</guid><description>&lt;h2 id="腳本限制">腳本限制&lt;/h2>
+&lt;p>在一般變數面前加一個 &lt;code>&amp;amp;&lt;/code> 符號 (address-of operator)，這時取出的不是值 (value)，而是該值存放在記憶體中的位址 (address)。&lt;/p></description></item><item><title>在 Mac/Linux/WSL 安裝多版本 Go</title><link>https://jakrh.github.io/posts/20250328-multi-version-go/</link><pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate><guid>https://jakrh.github.io/posts/20250328-multi-version-go/</guid><description>&lt;h2 id="優勢">優勢&lt;/h2>
+&lt;ol>
+&lt;li>方便升級 Go 版本。&lt;/li>
+&lt;li>可安裝多個 Go 版本，方便測試或因應不同專案需要。&lt;/li>
+&lt;/ol>
+&lt;h2 id="腳本限制">腳本限制&lt;/h2>
 &lt;ol>
 &lt;li>CPU 只支援 x86-64 或 ARM64， 作業系統只支援 Linux、macOS 以及 WSL。其他的類 Unix 系統要自行調整 &lt;code>kernel&lt;/code> 與 &lt;code>machine&lt;/code> 變數，安裝包檔名列表可見 &lt;a href="https://go.dev/dl/">https://go.dev/dl/&lt;/a> 。&lt;/li>
 &lt;li>Go 版本須大於 1.20，否則切換版本時的安裝路徑會有所不同。&lt;/li>
