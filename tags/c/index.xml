@@ -6,6 +6,10 @@
 &lt;li>空指標&lt;/li>
 &lt;/ol>
 &lt;p>剩下的都其次。&lt;/p>
-&lt;h2 id="指標變數">指標變數&lt;/h2>
-&lt;h3 id="引用-reference">引用 (reference)&lt;/h3>
-&lt;p>在一般變數面前加一個 &lt;code>&amp;amp;&lt;/code> 符號 (address-of operator)，這時取出的不是值 (value)，而是該值存放在記憶體中的位址 (address)。&lt;/p></description></item></channel></rss>
+&lt;h2 id="如何執行範例程式碼">如何執行範例程式碼&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>安裝 C 編譯器，例如 &lt;code>gcc&lt;/code>、&lt;code>clang&lt;/code>。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>如果作業系統是 macOS，只要系統已安裝 Xcode，&lt;code>clang&lt;/code> 就存在，不用另外安裝。&lt;/p></description></item></channel></rss>
