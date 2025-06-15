@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jakr Hung's Learning Notes</title><link>https://jakrh.github.io/posts/</link><description>Recent content in Posts on Jakr Hung's Learning Notes</description><generator>Hugo</generator><language>zh-Hant-TW</language><lastBuildDate>Sun, 06 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jakrh.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>軟體工程視角：Golang 優劣勢分析</title><link>https://jakrh.github.io/posts/20250404-golang-pros-cons/</link><pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate><guid>https://jakrh.github.io/posts/20250404-golang-pros-cons/</guid><description>&lt;h2 id="前言為現代軟體工程而生">前言：為現代軟體工程而生&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jakr Hung's Learning Notes</title><link>https://jakrh.github.io/posts/</link><description>Recent content in Posts on Jakr Hung's Learning Notes</description><generator>Hugo</generator><language>zh-Hant-TW</language><lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jakrh.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>筆記：安裝與設定本機測試用 Ubuntu 虛擬機</title><link>https://jakrh.github.io/posts/20250615-local-vm-for-test/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><guid>https://jakrh.github.io/posts/20250615-local-vm-for-test/</guid><description>&lt;h2 id="環境">環境&lt;/h2>
+&lt;ul>
+&lt;li>M4 MacBook Air 13 - 24G RAM, 512G SSD&lt;/li>
+&lt;li>VirtualBox 7.1.10&lt;/li>
+&lt;li>Ubuntu Server 24.04.2&lt;/li>
+&lt;/ul>
+&lt;h2 id="下載-os-image">下載 OS image&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://ubuntu.com/download/server">https://ubuntu.com/download/server&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="設定-virtualbox-虛擬機">設定 VirtualBox 虛擬機&lt;/h2>
+&lt;ul>
+&lt;li>選專家模式&lt;/li>
+&lt;li>在 &amp;ldquo;檔案 &amp;gt; 工具 &amp;gt; 網路 &amp;gt;「僅限主機」網路&amp;rdquo; 裡，新增一個 &lt;code>HostNetwork&lt;/code>&lt;/li>
+&lt;li>新增一台 Ubuntu VM，名為 &lt;code>Ubuntu Server&lt;/code>
+&lt;ul>
+&lt;li>先不指定安裝 ISO 映像檔 (不會啟用無人值守安裝)&lt;/li>
+&lt;li>RAM: 6144 MB&lt;/li>
+&lt;li>CPU Cores: 4&lt;/li>
+&lt;li>Storage: 160 GB&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>修改 VM 網卡
+&lt;ul>
+&lt;li>第一張網卡從 &lt;code>NAT&lt;/code> 改成 &lt;code>HostNetwork&lt;/code>&lt;/li>
+&lt;li>啟用第二張網卡，並使用 &lt;code>NAT&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>先擷取一個快照，命名為 &lt;code>Empty&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="安裝-os">安裝 OS&lt;/h2>
+&lt;ul>
+&lt;li>指定 VM 的 ISO 映像檔為剛下載的 Ubuntu Server ISO 檔&lt;/li>
+&lt;li>VM 開機&lt;/li>
+&lt;/ul>
+&lt;h3 id="安裝程式介面">安裝程式介面&lt;/h3>
+&lt;ul>
+&lt;li>安裝的語言相關配置都選 &lt;code>English&lt;/code>&lt;/li>
+&lt;li>可以把 &lt;code>LVM&lt;/code> 拿掉&lt;/li>
+&lt;li>記得裝 &lt;code>openssh-server&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="加入實體機-ssh-公鑰">加入實體機 SSH 公鑰&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1&lt;/span>&lt;span>ssh-copy-id YOUR_USER@YOUR_VM_IP
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note: 如果實體機還沒有設 SSH key，可用 &lt;code>ssh-keygen -t ed25519 -C &amp;quot;your_email@example.com&amp;quot;&lt;/code> 建立。&lt;/p></description></item><item><title>軟體工程視角：Golang 優劣勢分析</title><link>https://jakrh.github.io/posts/20250404-golang-pros-cons/</link><pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate><guid>https://jakrh.github.io/posts/20250404-golang-pros-cons/</guid><description>&lt;h2 id="前言為現代軟體工程而生">前言：為現代軟體工程而生&lt;/h2>
 &lt;p>Golang 是一種由 Google 開發的開源程式語言，以其簡潔、高效和強大的並行能力，在現代軟體工程領域嶄露頭角。有別於許多程式語言，Golang 的創造者們在設計之初，便有意識地在軟體工程的各個環節進行考量，旨在解決 Google 在軟體工程實踐中遇到的實際問題。正如 Rob Pike 在其演講「Go at Google: Language Design in the Service of Software Engineering」中所強調的，Golang 是一種「為軟體工程服務而設計的語言」。&lt;/p></description></item><item><title>提升程式碼品質與開發信心的利器：測試驅動開發 (TDD)</title><link>https://jakrh.github.io/posts/20250402-tdd/</link><pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate><guid>https://jakrh.github.io/posts/20250402-tdd/</guid><description>&lt;h2 id="前言善用-tdd-反而能幫你省下更多時間">前言：善用 TDD 反而能幫你省下更多時間&lt;/h2>
 &lt;p>面對 debug 與「改 A 壞 B」的連鎖效應，你是否常感時間精力被無情吞噬？儘管時程緊迫時，不寫測試更符合直覺，但事實上，善用它反而能幫公司節省許多隱性的人力與時間成本。然而，傳統的開發後補上測試，在實踐中卻面臨一些限制，導致其優勢沒被完整發揮，這正是測試驅動開發 (Test-Driven Development, TDD) 出現的原因。&lt;/p></description></item><item><title>記憶體操作概念：以 C 語言為例</title><link>https://jakrh.github.io/posts/20250329-c-memory/</link><pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate><guid>https://jakrh.github.io/posts/20250329-c-memory/</guid><description>&lt;h2 id="最重要的幾個概念">最重要的幾個概念&lt;/h2>
 &lt;ol>
